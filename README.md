@@ -1,7 +1,7 @@
 # M123 - Bind9
 
 Installation Bind9 als DNS Server auf ihrem lokalen System
-Logs werden unter /var/log/system unter dem Prozess named sichtbar sein.
+Logs werden unter /var/log/syslog unter dem Prozess named sichtbar sein.
 
 Für die Installation auf der VM Debian sind folgende Schritte auszuführen:
 
