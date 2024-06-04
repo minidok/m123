@@ -52,8 +52,5 @@ Bisherigen DNS Server aus resolv.conf auskommentieren
 #nameserver 192.168.198.1
 search localdomain
 
-#nameserver 192.168.217.2
-#nameserver 192.168.198.1
-search localdomain
 ````
 
