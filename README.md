@@ -1,4 +1,4 @@
-# m123 - Bind9
+# m123 - Bind9 DNS Installation auf VM Debian
 
 Installation Bind9 als DNS Server auf ihrem lokalen System
 Logs werden unter /var/log/syslog unter dem Prozess named sichtbar sein.
@@ -36,3 +36,9 @@ search localdomain
 Mit dem Start des neuen, lokalen DNS-Dienstes Bind9, werden DNS Abfragen von ihrem Host beantwortet
 ````
 sudo systemctl start bind9
+````
+
+Wenn ihr System denm Service ohne Fehler startet, können sie mit der Zonenkonfiguration, weiterfahren.
+Sollten sie das noch nie gemacht haben, finden sie hier ein Beispiel mit allen nötigen Dateien zur Anpassung: [Zonen-Konfiguration](https://github.com/minidok/m123/blob/f1a9d77332babf80e7b500b0029d6a185bc88c58/Zonen-Konfiguration.md)
+
+
