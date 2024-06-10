@@ -1,4 +1,4 @@
-# M123 - Bind9
+# m123 - Bind9
 
 Installation Bind9 als DNS Server auf ihrem lokalen System
 Logs werden unter /var/log/syslog unter dem Prozess named sichtbar sein.
@@ -33,11 +33,6 @@ Die Zeilen mit dem Schlüsselwort nameserver sollen auskommentiert sein.
 #nameserver 192.168.198.1
 search localdomain
 ````
-Wenn sie nun den nslookup Befehl ausführen, wird keine DNS Abfrage erfolgreich sein. Erwartung ist, dass der Command nslookup keinen DNS-Namen auflösen kann.
-````
-nslookup google.com
-````
-Was bedeutet, lokal auf ihrer VM ist keine DNS Abfrage möglich. 
-Das ändern wir nun. Mit dem Start des DNS-Dienstes Bind9:
+Mit dem Start des neuen, lokalen DNS-Dienstes Bind9, werden DNS Abfragen von ihrem Host beantwortet
 ````
 sudo systemctl start bind9
