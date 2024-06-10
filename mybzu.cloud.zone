@@ -1,0 +1,25 @@
+;
+$TTL 2d                  ; TTL TimeToLive erlaubte Cache-Dauer
+$ORIGIN mybzu.cloud.
+; ORIGIN: Domain-Eintrag - die Domain, alle @ brauchen diese Variable
+; Start of Authority SOA definiert Nameserver-Host und Admin-Mailadresse,
+; sowie Seriennummer und Zeitangaben für andere DNS
+@         IN      SOA   ns1.mybzu.cloud. root.mybzu.cloud. (
+                                2024060701 ; serial number mit Datum und Nummer
+                                12h        ; refresh
+                                15m        ; update retry
+                                3w         ; expiry
+                                2h         ; minimum
+                                )
+; Nameserver für diese Domain
+@          IN   NS      ns1
+; Mailserver (MX) für diese Domain mit Prio 10 (kleiner = höhere Priorität)
+@          IN   MX  10  srv
+; Nameserver zeigt auf diesen Nameserver (dieser Server ist zuständig)
+ns1        IN   A       192.168.217.128
+; Nun folgen weitere Einträge für diese Zone (Subnet 192.168.217.0/24)
+srv        IN   A       192.168.217.10
+srvv6      IN   AAAA    2001:dc7::12
+vpn        IN   CNAME   srv
+www        IN   A       192.168.217.12
+notes      IN   TXT     "Notitzen zu dieser Zone"
