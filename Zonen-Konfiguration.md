@@ -2,7 +2,7 @@
 
 ## named.conf.options
 Einstellungen für den Server, wie Forwarders für Requests an nächsten DNS Server sowie recursion.
-Disee Datei befindet sich auf der VM unter: [/etc/bind/named.conf.options](https://github.com/minidok/m123/blob/219a8e6392f0a29f3cc035f1cac7e8d2c6ca0c6a/named.conf.options)
+Diese Datei befindet sich auf der VM unter: [/etc/bind/named.conf.options](https://github.com/minidok/m123/blob/219a8e6392f0a29f3cc035f1cac7e8d2c6ca0c6a/named.conf.options)
 
 Als Beispiel können folgende Zonen verwendet werden:
 Die erste Zone enhält die Domain-Name mybbzu.cloud. (Suche IP zu einer DN)
