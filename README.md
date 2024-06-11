@@ -5,10 +5,11 @@ Logs werden unter /var/log/syslog unter dem Prozess named sichtbar sein.
 
 Für die Installation auf der VM Debian sind folgende Schritte auszuführen:
 
-Update apt cache
+Update apt cache (Katalog über aktuelle Pakete wird erneuert, ohne alles zu installiern)
 ```
     sudo apt update
 ```
+Einen Upgrade für alle Pakete führen sie nicht aus, nur die Installation der Komponente für den DNS-Service.
 
 Install BIND Komponenten
 ```
