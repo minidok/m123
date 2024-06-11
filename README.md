@@ -40,7 +40,7 @@ sudo systemctl start bind9
 ````
 
 Wenn ihr System denm Service ohne Fehler startet, können sie mit der Zonenkonfiguration, weiterfahren.
-Im nächsten Abschnitt "Zonnen-Konfigruation" finden sie ein Beispiel mit allen nötigen Dateien: [Zonen-Konfiguration](https://github.com/minidok/m123/blob/f1a9d77332babf80e7b500b0029d6a185bc88c58/Zonen-Konfiguration.md)
+Im nächsten Abschnitt "Zonen-Konfigruation" finden sie ein Beispiel mit allen nötigen Dateien: [Zonen-Konfiguration](https://github.com/minidok/m123/blob/f1a9d77332babf80e7b500b0029d6a185bc88c58/Zonen-Konfiguration.md)
 Probieren sie in einem ersten Schritt aus, ob die DNS Auflösung funktioniert. Anschliessen passen sie die Konfiguration nach ihrem Geschmack und mit eigenen Namen an 🐙 🥇
 
 
