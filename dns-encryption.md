@@ -57,7 +57,7 @@ Neben dem Block TLS brauch der Server nun die Anweisung, auf welchen Ports er di
         // DNS over HTTPS (DoH), Port 443
         listen-on port 443 tls mein-server-tls http default { any; };
         // DNS over TLS (DoT), Standardport ist 853
-        listen-on port 853 tls server-tls { any; };
+        listen-on port 853 tls mein-server-tls { any; };
 ````
 
 ### Server Neustart und Kontrolle Logfile
