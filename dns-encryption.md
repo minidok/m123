@@ -28,7 +28,7 @@ openssl req -new -newkey rsa:4096 -x509 -sha256 -days 365 -nodes -out server.crt
 Wir wollen die Schlüssel an einem sicheren Ort und dem Bind-Server zuordnen, weshalb wir ein eigenes Verzeichnis erstellen:
 ````
 mkdir /etc/bind/ssl
-chmod 550 /etc/bin/ssl
+chmod 550 /etc/bind/ssl
 ````
 Kopieren der erstellen Sicherheitsmerkmale in das SSL Verzeichnis
 ````
