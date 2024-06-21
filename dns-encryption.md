@@ -55,7 +55,7 @@ tls mein-server-tls {
 Neben dem Block TLS brauch der Server nun die Anweisung, auf welchen Ports er die Anfragen entegen nehmen soll. Diese Konfiguration erfolgt im bereits vorhanden Block **options**:
 ````
         // DNS over HTTPS (DoH), Port 443
-        listen-on port 443 tls server-tls http default { any; };
+        listen-on port 443 tls mein-server-tls http default { any; };
         // DNS over TLS (DoT), Standardport ist 853
         listen-on port 853 tls server-tls { any; };
 ````
