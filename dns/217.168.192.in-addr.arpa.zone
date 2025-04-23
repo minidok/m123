@@ -1,0 +1,14 @@
+; Reverse-Lookup-Zone für die Domain mybzu.cloud
+$TTL 2d                  ; TTL TimeToLive erlaubte Cache-Dauer
+@         IN      SOA   ns1.mybzu.cloud. root.mybzu.cloud. (
+                                2024060701 ; serial number mit Datum und Nummer
+                                12h        ; refresh
+                                15m        ; update retry
+                                3w         ; expiry
+                                2h         ; minimum
+                                )
+; Nameserver für diese Domain
+@        IN   NS    ns1.mybzu.cloud.
+; Reverse-Einträge, IP-Adressen zu Namen auflösen
+10       IN   PTR   srv.mybzu.cloud.
+12       IN   PTR   www.mybzu.cloud.
