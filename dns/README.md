@@ -59,11 +59,12 @@ Prüfe mit `cat /etc/resolv.conf`, ob der Eintrag `nameserver 127.0.0.1` nun gan
 
 ### 4. BIND9 Dienst starten
 
-Mit dem Start des lokalen DNS-Dienstes werden DNS Abfragen von Ihrem Host durch Bind9 beantwortet:
+Mit dem Start des lokalen DNS-Dienstes werden DNS Abfragen von Ihrem Host durch Bind9 beantwortet.
+named.service entspricht dem alten namen bind9.service:
 
 ```bash
-sudo systemctl start bind9
-sudo systemctl enable bind9
+sudo systemctl start named
+sudo systemctl enable named
 
 ```
 
